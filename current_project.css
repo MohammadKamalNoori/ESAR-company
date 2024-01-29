@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+body img.afg-img{
+    position: absolute;
+    position: fixed;
+    height: 100vh;
+    margin-left: 350px;
+}
+
+/* HEADER SECTION */
+header{
+    position: absolute;
+    height: 11rem;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+header nav{
+    box-sizing: border-box;
+    text-align: center;
+}
+header .nav-bar ul{
+    list-style: none;
+    float: inline-end;
+    margin-right: -8rem;
+    text-align: center;
+    margin-top: 20px;
+}
+header .nav-bar ul li{
+    position: relative;
+    float: left;
+}
+header .nav-bar ul li a{
+    font-size: 23px;
+    padding: 23px 23px 40px 23px;
+    color: white;
+    background-color: chocolate;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    width: 11rem;
+    height: 5rem;
+}
+header .nav-bar ul li a:hover{
+    background-color: whitesmoke;
+    color: chocolate;
+    transition: 0.7s;
+}
+header .nav-bar ul li ul{
+    position:absolute;
+    top: 61px;
+    left: 9px;
+    width: 140px;
+    background-color:gray ;
+    display: none;
+    border-radius: 20px;
+}
+header .nav-bar ul li ul li{
+    width: 100%;
+    border-left: -10px;
+}
+header .nav-bar ul li:focus-within > ul,
+header .nav-bar ul li:hover > ul {
+    display: initial;
+    transition: 2s all;
+}
+
+header .nav-bar ul li ul a{
+    padding: 18px 0;
+    margin-left: -40px;
+    text-decoration: none;
+}
+
+.bk_img{
+    width: 100%;
+    height: 900px;
+    margin-top: 0px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/adesh-bankar-YNm1fhRIMa8-unsplash.jpg);
+    background-attachment: fixed;
+}
+
+.logo img{
+    width: 155px;
+    height: 155px;
+    padding: 5px;
+    margin: 7px 50px 0 -130px ;
+    border-radius: 55%;
+    float: left;
+    border: 1px solid white;
+}
+
+header p.logo{
+    margin: 10px 0 0 -5rem;
+    line-height: 2.4rem;
+    float: left;
+    color: chocolate;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+hr{
+    box-shadow: 5px 10px 20px 5px rgb(114, 114, 114);
+}
+
+
+/* BODY */
+section{
+    width: 100%;
+    height: auto;
+    margin: 12rem auto;
+    float: left;
+}
+
+section h1{
+    position: relative;
+    height: 8rem;
+    width: 43rem;
+    margin: 10px auto 0px ;
+    border-radius: 0 30px 0 30px;
+    font-weight:bold ;
+    padding: 5px;
+    text-align: center;
+    font-size: 3rem;
+    color: rgba(210, 105, 30, 0.76);
+
+}
+div.card{
+    width: 35rem;
+    height: 44rem; 
+    float: left; 
+    padding: 8px ;
+    font-size: 1.4rem;
+    margin: 30px 0 80px 32rem;
+    box-shadow: 0 10px 40px 20px  rgba(136, 129, 129, 0.756) ; 
+}
+
+
+/* FOOTER SECTION */
+footer{
+    height: 22rem;
+    width: 100%;
+    padding-top:4rem ;
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 20px black;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+
+.f-logo img{
+    position:relative ;
+    width: 12rem;
+    height: 12rem;
+    padding: 20px;
+    margin: 0 80px 80px;
+    border-radius: 55%;
+    float: left;
+}
+
+div.add{
+    position: relative;
+    width: 15rem;
+    height:14rem;
+    margin: 0 50px 0;
+    padding: 10px;
+    text-align: justify;
+    font-size: 18px;
+    float: inline-start;
+    line-height: 1.3rem;
+    background-color: whitesmoke;
+}
+
+div.social{
+    position: relative;
+    width: 15rem;
+    height: 14rem;
+    padding: 7px 0 0 20px;
+    margin: 0 100px 0 ;
+    text-align: justify;
+    font-size: 18px;
+    float: left;
+    background-color: whitesmoke;
+}
+div.social li{
+    list-style-type: none;
+    margin:-10px 0 0 -38px;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    text-align: justify;
+}
+ div.social a{
+    color: #2564d0;
+ }
+ div.social i{
+    font-size: 20px;
+ }
+
+div.inq{
+    position: relative;
+    width: 16rem;
+    height: 14rem;
+    margin: 0 50px 0;
+    padding: 7px;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 18px;
+    float: left;
+} 

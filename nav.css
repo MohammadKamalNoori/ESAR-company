@@ -1,0 +1,25 @@
+ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    list-style: none;
+}
+
+ul li ul.drop li{
+    display: block;
+}
+ul li ul.drop{
+    width: 100%;
+    background: cyan;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background: white;
+}
+ul li:hover ul:hover{
+    display: block;
+}

@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+body img.afg-img{
+    position: absolute;
+    position: fixed;
+    opacity: 0.7;
+    top: 0;
+    height: 100vh;
+    margin-left: 320px;
+}
+
+/* HEADER SECTION */
+header{
+    position: relative;
+    height: 11rem;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+header nav{
+    box-sizing: border-box;
+    text-align: center;
+}
+header .nav-bar ul{
+    list-style: none;
+    float: inline-end;
+    margin-right: -8rem;
+    text-align: center;
+}
+header .nav-bar ul li{
+    position: relative;
+    float: left;
+}
+header .nav-bar ul li a{
+    font-size: 23px;
+    padding: 23px;
+    color: white;
+    background-color: chocolate;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    width: 11rem;
+    height: 5rem;
+}
+header .nav-bar ul li a:hover{
+    background-color: whitesmoke;
+    color: chocolate;
+    transition: 0.7s;
+}
+header .nav-bar ul li ul{
+    position:absolute;
+    top: 80px;
+    left: 2px;
+    width: 140px;
+    background-color:gray ;
+    display: none;
+    border-radius: 20px;
+}
+header .nav-bar ul li ul li{
+    width: 100%;
+    border-left: -10px;
+}
+header .nav-bar ul li:focus-within > ul,
+header .nav-bar ul li:hover > ul {
+    display: initial;
+}
+
+header .nav-bar ul li ul a{
+    padding: 18px 0;
+    margin-left: -40px;
+    text-decoration: none;
+}
+
+.bk_img{
+    width: 100%;
+    height: 900px;
+    margin-top: 0px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/adesh-bankar-YNm1fhRIMa8-unsplash.jpg);
+    background-attachment: fixed;
+}
+
+.logo img{
+    width: 155px;
+    height: 155px;
+    padding: 5px;
+    margin: 7px 50px 0 -130px ;
+    border-radius: 55%;
+    float: left;
+    border: 1px solid white;
+}
+
+header p.logo{
+    margin: 10px 0 0 -5rem;
+    line-height: 2.4rem;
+    float: left;
+    color: chocolate;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+/* BODY */
+
+section{
+    margin:0 auto ;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(245, 245, 245, 0.066);
+}
+section *{
+    background-color: rgba(245, 245, 245, 0.066);
+} 
+section div{
+    margin: 0 180px 35px;
+    padding: 20px;
+    width: 15%;
+    height: 12rem;
+    font-size: 22px;
+}
+section div i{
+    font-size: 60px;
+    margin: 90px 0 0 -130px;
+}
+
+section p{
+    margin: -65px 0 0 0;
+    width: 20%;
+    
+}
+section div.email p{
+    margin-top: -65px;
+}
+
+section h3{
+    font-size: 28px;
+    margin:0 18px 20px -18px;
+    padding: 12px 8px 15px 8px;
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+section div.con-info{
+    float: right;
+    width: 50%;
+    height: 15rem;
+    text-align: center;
+    margin: -20rem 15rem 0 0;
+    padding: 24px;
+    border-radius: 40px;
+    background-color: chocolate;
+}
+section img{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    float: right;
+    margin: -36rem 34rem 0 0;
+}
+section .con-info h2{
+    font-size: 50px;
+    color: whitesmoke;
+    background-color: chocolate;
+}
+section .con-info p{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 30px;
+    color: whitesmoke;
+    background-color: chocolate;
+}
+
+
+
+
+/* FOOTER SECTION */
+/* footer{
+    height: 22rem;
+    width: 100%;
+    padding-top:4rem ;
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 20px black;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+
+.f-logo img{
+    position:relative ;
+    width: 12rem;
+    height: 12rem;
+    padding: 20px;
+    margin: 0 80px 80px;
+    border-radius: 55%;
+    float: left;
+}
+
+div.add{
+    position: relative;
+    width: 15rem;
+    height:14rem;
+    margin: 0 50px 0;
+    padding: 10px;
+    text-align: justify;
+    font-size: 18px;
+    float: inline-start;
+    line-height: 1.3rem;
+    background-color: whitesmoke;
+}
+
+div.social{
+    position: relative;
+    width: 15rem;
+    height: 14rem;
+    padding: 7px 0 0 20px;
+    margin: 0 100px 0 ;
+    text-align: justify;
+    font-size: 18px;
+    float: left;
+    background-color: whitesmoke;
+}
+div.social li{
+    list-style-type: none;
+    margin:-10px 0 0 -38px;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    text-align: justify;
+}
+ div.social a{
+    color: #2564d0;
+ }
+ div.social i{
+    font-size: 20px;
+ }
+
+div.inq{
+    position: relative;
+    width: 16rem;
+    height: 14rem;
+    margin: 0 50px 0;
+    padding: 7px;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 18px;
+    float: left;
+} */

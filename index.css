@@ -1,0 +1,407 @@
+    *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body{
+    background-color: whitesmoke;
+    margin-top: 9rem;
+}
+body img.afg-img{
+    opacity: 0.5;
+    position: absolute;
+    position: fixed;
+    height: 90vh;
+    margin-top: 100px;
+    margin-left: 350px;
+}
+
+/* HEADER */
+header{
+    position: relative;
+    position: sticky;
+    height: 7.5rem;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    padding: 0px 7%;
+    margin-top: -9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+header nav{
+    box-sizing: border-box;
+    text-align: center;
+}
+header .nav-bar ul{
+    list-style: none;
+    float: inline-end;
+    margin-right: -8rem;
+    text-align: center;
+}
+header .nav-bar ul li{
+    position: relative;
+    float: left;
+}
+header .nav-bar ul li a{
+    font-size: 23px;
+    padding: 23px;
+    color: white;
+    background-color: chocolate;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    width: 11rem;
+    height: 5rem;
+}
+header .nav-bar ul li a:hover{
+    background-color: whitesmoke;
+    color: chocolate;
+    transition: 0.7s;
+}
+header .nav-bar ul li ul{
+    position:absolute;
+    top: 80.5px;
+    left:0px;
+    width: 140px;
+    background-color:gray ;
+    display: none;
+    border-radius: 20px;
+}
+header .nav-bar ul li ul li{
+    width: 100%;
+    border-left: -10px;
+}
+header .nav-bar ul li:focus-within > ul,
+header .nav-bar ul li:hover > ul {
+    display: initial;
+
+}
+
+header .nav-bar ul li ul a{
+    padding: 18px 0;
+    margin-left: -40px;
+    text-decoration: none;
+}
+
+.bk_img{
+    width: 100%;
+    height: 900px;
+    margin-top: 0;
+    background-position: center;
+    background-size: cover;
+    /* background-image: url(images/adesh-bankar-YNm1fhRIMa8-unsplash.jpg); */
+    background-attachment: fixed;
+}
+
+.logo img{
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    margin: 0 50px 0 -130px ;
+    border-radius: 55%;
+    float: left;
+    border: 1px solid white;
+}
+
+header p.logo{
+    margin: 10px 0 0 -5rem;
+    line-height: 2.4rem;
+    float: left;
+    color: chocolate;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+/* BODY */
+section{
+    position: relative;
+}
+div.head{
+    width: 51rem;
+    margin: 0 auto;
+}
+div.head h1{
+    padding: 40px;
+    border-radius: 50px;
+    margin: 100px 0px 80px 0 ;
+    font-size: 4.7rem;
+    color: chocolate;
+    float: left;
+    box-shadow: 0 0 10px black;
+    background-color: rgba(245, 245, 245, 0.6) ;
+    border: 1px solid rgba(255, 255, 255, 0.576);
+    justify-self: center;
+}
+
+div.head h3{
+    text-align: center;
+    color: chocolate;
+    font-size: 1.4rem;
+    float: left;
+    margin-left: 0;
+    margin-top: -2rem;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px black;
+    background-color: rgba(245, 245, 245, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+div.mission h3{
+    margin: 80px 0 0 100px;
+    font-size: 2.2rem;
+    height: 110px;
+    width: 180px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 0 35px 35px 35px;
+    background-color: rgba(210, 105, 30, 0.767)  ;
+    color: white;
+}
+
+div.mission h1{
+    margin: 20px 0 0 100px;
+    font-size: 3.2rem;
+    width: 40%;
+    border-radius: 30px 30px 200px 30px ;
+    color: chocolate;
+    background-color: rgba(245,245,245,0.6);
+}
+
+button.mission a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+div.mission img{
+    margin: 0px 0 0 400px;
+    border-radius: 40px;
+}
+
+button.mission{
+    width: 200px;
+    height: 60px;
+    margin: 30px 0 0 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(12, 102, 220, 0.5) ;
+}
+
+button:focus{
+    background-color:rgba(37, 128, 246, 0.987) ;
+}
+
+div.vision h3{
+    margin: 80px 0 0 100px;
+    font-size: 2.2rem;
+}
+
+div.vision h1{
+    margin: 20px 0 0 100px;
+    font-size: 3.2rem;
+    color: chocolate;
+    background-color: rgba(245,245,245,0.6);
+    border-radius: 30px;
+    width: 40%;
+}
+
+button.vision a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+div.vision img{
+    margin: 0px 0 70px 400px;
+    border-radius: 40px;
+}
+
+button.vision{
+    width: 200px;
+    height: 60px;
+    margin: 30px 0 0 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(12, 102, 220, 0.5) ;
+}
+
+button:focus{
+    background-color:rgba(37, 128, 246, 0.987) ;
+}
+
+hr{
+    margin: 0 auto;
+    width: 90rem;
+    border: 1.5px solid black;
+}
+hr.footer{
+    margin: 20rem auto 0;
+    width: 90rem;
+    border: 1.5px solid black;
+}
+
+div.services img{
+    height: 60rem;
+    width: 45rem;
+    margin: -120px 60px 0 80px;
+    float: left;
+    border-radius: 40px;
+    
+}
+
+div.services h3{
+    margin: 200px 0 0 0;
+    font-size: 2.5rem;
+    color: chocolate ;
+    
+}
+
+div.services p{
+    height: 43rem;
+    width: 85rem;
+    margin: 20px 100px 0 10rem ;
+    text-align: justify;
+    font-size: 1.3rem;
+    text-indent: 80px;
+    line-height: 2.3rem;
+    font-weight: bold;
+}
+
+div.c-services h3{
+    margin: 28rem 0px 30px 85px;
+    font-size: 2.5rem;
+    color: rgba(12, 102, 220, 0.746) ;
+}
+
+div.c-services p{
+    width: 40rem;
+    float: left;
+    margin: 10px 30px 0 85px;
+    text-align: justify;
+    text-indent: 80px;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    font-weight: bold;
+
+    
+}
+
+div.c-services img{
+    height: 60rem;
+    width: 45rem;
+    margin: -200px 0px 0 40px;
+    border-radius: 40px;
+}
+
+div.l-services img{
+    height: 45rem;
+    width: 45rem;
+    margin: -80px 60px 0 80px;
+    float: left;
+    border-radius: 40px;
+    
+}
+
+div.l-services h3{
+    margin: 23rem 0px 0 0;
+    font-size: 2.5rem;
+    color: rgba(12, 102, 220, 0.746) ;
+}
+
+div.l-services p{
+    height: 40rem;
+    width: 85rem;
+    margin: 20px 100px 150px 10rem ;
+    text-align: justify;
+    font-size: 1.3rem;
+    text-indent: 80px;
+    line-height: 2.3rem;
+    font-weight: bold;
+}
+
+
+
+
+/* FOOTER SECTION */
+footer{
+    height: 18rem;
+    width: 100%;
+    padding-top:4rem ;
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 20px black;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+
+.f-logo img{
+    position:relative ;
+    width: 12rem;
+    height: 12rem;
+    padding: 20px;
+    margin: 0 80px 80px;
+    border-radius: 55%;
+    float: left;
+}
+
+div.add{
+    position: relative;
+    width: 15rem;
+    height:14rem;
+    margin: 0 50px 0;
+    padding: 10px;
+    text-align: justify;
+    font-size: 18px;
+    float: inline-start;
+    line-height: 1.3rem;
+    background-color: whitesmoke;
+}
+
+div.social{
+    position: relative;
+    width: 15rem;
+    height: 14rem;
+    padding: 7px 0 0 20px;
+    margin: 0 100px 0 ;
+    text-align: justify;
+    font-size: 18px;
+    float: left;
+    background-color: whitesmoke;
+}
+div.social li{
+    list-style-type: none;
+    margin:-10px 0 0 -38px;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    text-align: justify;
+}
+ div.social a{
+    color: #2564d0;
+ }
+ div.social i{
+    font-size: 20px;
+ }
+
+div.inq{
+    position: relative;
+    width: 16rem;
+    height: 14rem;
+    margin: 0 50px 0;
+    padding: 7px;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 18px;
+    float: left;
+} 
